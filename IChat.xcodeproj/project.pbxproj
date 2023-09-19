@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CE01274E2AB8640B00A26C97 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE01274D2AB8640B00A26C97 /* LoginViewController.swift */; };
+		CE0127512AB9B73200A26C97 /* SetupProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0127502AB9B73200A26C97 /* SetupProfileViewController.swift */; };
 		CE2597A12AADF06C0014EF6A /* UILabel + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2597A02AADF06C0014EF6A /* UILabel + Extension.swift */; };
 		CE2597A42AAE0BC00014EF6A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2597A32AAE0BC00014EF6A /* SignUpViewController.swift */; };
 		CE2597A62AAE37CB0014EF6A /* UnderlineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2597A52AAE37CB0014EF6A /* UnderlineTextField.swift */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		CE01274D2AB8640B00A26C97 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CE0127502AB9B73200A26C97 /* SetupProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupProfileViewController.swift; sourceTree = "<group>"; };
 		CE2597A02AADF06C0014EF6A /* UILabel + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extension.swift"; sourceTree = "<group>"; };
 		CE2597A32AAE0BC00014EF6A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		CE2597A52AAE37CB0014EF6A /* UnderlineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlineTextField.swift; sourceTree = "<group>"; };
@@ -61,6 +63,14 @@
 			path = LoginView;
 			sourceTree = "<group>";
 		};
+		CE01274F2AB9B6E900A26C97 /* SetupProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				CE0127502AB9B73200A26C97 /* SetupProfileViewController.swift */,
+			);
+			path = SetupProfileView;
+			sourceTree = "<group>";
+		};
 		CE2597A22AAE0B200014EF6A /* SignUpView */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +101,7 @@
 			children = (
 				CEF7474A2AA8CB7A00E422E1 /* AppDelegate.swift */,
 				CEF7474C2AA8CB7A00E422E1 /* SceneDelegate.swift */,
+				CE01274F2AB9B6E900A26C97 /* SetupProfileView */,
 				CE01274C2AB863E800A26C97 /* LoginView */,
 				CEF7475E2AA8FC0600E422E1 /* AuthenticationView */,
 				CE2597A22AAE0B200014EF6A /* SignUpView */,
@@ -201,6 +212,7 @@
 				CE2597A82AAE56D90014EF6A /* UIStackView + Extension.swift in Sources */,
 				CEF747612AA8FC6F00E422E1 /* UIButton + Extension.swift in Sources */,
 				CE2597A12AADF06C0014EF6A /* UILabel + Extension.swift in Sources */,
+				CE0127512AB9B73200A26C97 /* SetupProfileViewController.swift in Sources */,
 				CE2597A62AAE37CB0014EF6A /* UnderlineTextField.swift in Sources */,
 				CEF7474B2AA8CB7A00E422E1 /* AppDelegate.swift in Sources */,
 				CEF7474D2AA8CB7A00E422E1 /* SceneDelegate.swift in Sources */,
