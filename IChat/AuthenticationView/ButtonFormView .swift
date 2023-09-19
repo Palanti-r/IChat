@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ButtonFormView: UIView {
+class ButtonStackView: UIView {
     init(label: UILabel, button: UIButton) {
         super.init(frame: .zero)
         label.translatesAutoresizingMaskIntoConstraints = false

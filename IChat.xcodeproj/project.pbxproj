@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE01274E2AB8640B00A26C97 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE01274D2AB8640B00A26C97 /* LoginViewController.swift */; };
 		CE2597A12AADF06C0014EF6A /* UILabel + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2597A02AADF06C0014EF6A /* UILabel + Extension.swift */; };
+		CE2597A42AAE0BC00014EF6A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2597A32AAE0BC00014EF6A /* SignUpViewController.swift */; };
+		CE2597A62AAE37CB0014EF6A /* UnderlineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2597A52AAE37CB0014EF6A /* UnderlineTextField.swift */; };
+		CE2597A82AAE56D90014EF6A /* UIStackView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2597A72AAE56D90014EF6A /* UIStackView + Extension.swift */; };
+		CE4749362AB216E9003DBA66 /* UIFont + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4749352AB216E9003DBA66 /* UIFont + Extension.swift */; };
 		CE9FDD802AAA06E1005ACF86 /* ButtonFormView .swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9FDD7F2AAA06E1005ACF86 /* ButtonFormView .swift */; };
 		CEF7474B2AA8CB7A00E422E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF7474A2AA8CB7A00E422E1 /* AppDelegate.swift */; };
 		CEF7474D2AA8CB7A00E422E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF7474C2AA8CB7A00E422E1 /* SceneDelegate.swift */; };
@@ -19,7 +24,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE01274D2AB8640B00A26C97 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CE2597A02AADF06C0014EF6A /* UILabel + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extension.swift"; sourceTree = "<group>"; };
+		CE2597A32AAE0BC00014EF6A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		CE2597A52AAE37CB0014EF6A /* UnderlineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlineTextField.swift; sourceTree = "<group>"; };
+		CE2597A72AAE56D90014EF6A /* UIStackView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView + Extension.swift"; sourceTree = "<group>"; };
+		CE4749352AB216E9003DBA66 /* UIFont + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont + Extension.swift"; sourceTree = "<group>"; };
 		CE9FDD7F2AAA06E1005ACF86 /* ButtonFormView .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ButtonFormView .swift"; sourceTree = "<group>"; };
 		CEF747472AA8CB7A00E422E1 /* IChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF7474A2AA8CB7A00E422E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +53,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE01274C2AB863E800A26C97 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				CE01274D2AB8640B00A26C97 /* LoginViewController.swift */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		CE2597A22AAE0B200014EF6A /* SignUpView */ = {
+			isa = PBXGroup;
+			children = (
+				CE2597A32AAE0BC00014EF6A /* SignUpViewController.swift */,
+				CE2597A52AAE37CB0014EF6A /* UnderlineTextField.swift */,
+			);
+			path = SignUpView;
+			sourceTree = "<group>";
+		};
 		CEF7473E2AA8CB7A00E422E1 = {
 			isa = PBXGroup;
 			children = (
@@ -64,7 +91,9 @@
 			children = (
 				CEF7474A2AA8CB7A00E422E1 /* AppDelegate.swift */,
 				CEF7474C2AA8CB7A00E422E1 /* SceneDelegate.swift */,
-				CEF7475E2AA8FC0600E422E1 /* AuthViewController */,
+				CE01274C2AB863E800A26C97 /* LoginView */,
+				CEF7475E2AA8FC0600E422E1 /* AuthenticationView */,
+				CE2597A22AAE0B200014EF6A /* SignUpView */,
 				CEF7475F2AA8FC2A00E422E1 /* Extension */,
 				CEF747532AA8CB7C00E422E1 /* Assets.xcassets */,
 				CEF747552AA8CB7C00E422E1 /* LaunchScreen.storyboard */,
@@ -73,21 +102,23 @@
 			path = IChat;
 			sourceTree = "<group>";
 		};
-		CEF7475E2AA8FC0600E422E1 /* AuthViewController */ = {
+		CEF7475E2AA8FC0600E422E1 /* AuthenticationView */ = {
 			isa = PBXGroup;
 			children = (
 				CEF7474E2AA8CB7A00E422E1 /* AuthViewController.swift */,
 				CE9FDD7F2AAA06E1005ACF86 /* ButtonFormView .swift */,
 			);
-			path = AuthViewController;
+			path = AuthenticationView;
 			sourceTree = "<group>";
 		};
 		CEF7475F2AA8FC2A00E422E1 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				CE4749352AB216E9003DBA66 /* UIFont + Extension.swift */,
 				CEF747602AA8FC6F00E422E1 /* UIButton + Extension.swift */,
 				CEF747632AA9058300E422E1 /* UIColor + Extension.swift */,
 				CE2597A02AADF06C0014EF6A /* UILabel + Extension.swift */,
+				CE2597A72AAE56D90014EF6A /* UIStackView + Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -162,10 +193,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE01274E2AB8640B00A26C97 /* LoginViewController.swift in Sources */,
+				CE4749362AB216E9003DBA66 /* UIFont + Extension.swift in Sources */,
 				CEF7474F2AA8CB7A00E422E1 /* AuthViewController.swift in Sources */,
 				CE9FDD802AAA06E1005ACF86 /* ButtonFormView .swift in Sources */,
+				CE2597A42AAE0BC00014EF6A /* SignUpViewController.swift in Sources */,
+				CE2597A82AAE56D90014EF6A /* UIStackView + Extension.swift in Sources */,
 				CEF747612AA8FC6F00E422E1 /* UIButton + Extension.swift in Sources */,
 				CE2597A12AADF06C0014EF6A /* UILabel + Extension.swift in Sources */,
+				CE2597A62AAE37CB0014EF6A /* UnderlineTextField.swift in Sources */,
 				CEF7474B2AA8CB7A00E422E1 /* AppDelegate.swift in Sources */,
 				CEF7474D2AA8CB7A00E422E1 /* SceneDelegate.swift in Sources */,
 				CEF747642AA9058300E422E1 /* UIColor + Extension.swift in Sources */,
