@@ -19,6 +19,7 @@ extension UIButton {
         view: Bool? = false
     ) {
         self.init()
+        self.init(type: .system)
         self.setTitle(title, for: .normal)
         if titleColor == .whiteColor {
             self.setTitleColor(.white, for: .normal)
@@ -46,10 +47,11 @@ extension UIButton {
         
     }
     func customizeGoogleButton() {
-        var googleLogo: UIImageView = {
+        let googleLogo: UIImageView = {
             let image = UIImageView()
             image.image = #imageLiteral(resourceName: "image")
-           // image.contentMode = .scaleAspectFit
+            image.contentMode = .scaleAspectFit
+            
             return image
             
         }()

@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		CE01274E2AB8640B00A26C97 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE01274D2AB8640B00A26C97 /* LoginViewController.swift */; };
 		CE0127512AB9B73200A26C97 /* SetupProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0127502AB9B73200A26C97 /* SetupProfileViewController.swift */; };
+		CE0127532AB9B7F200A26C97 /* AddPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0127522AB9B7F200A26C97 /* AddPhotoView.swift */; };
 		CE2597A12AADF06C0014EF6A /* UILabel + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2597A02AADF06C0014EF6A /* UILabel + Extension.swift */; };
 		CE2597A42AAE0BC00014EF6A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2597A32AAE0BC00014EF6A /* SignUpViewController.swift */; };
 		CE2597A62AAE37CB0014EF6A /* UnderlineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2597A52AAE37CB0014EF6A /* UnderlineTextField.swift */; };
 		CE2597A82AAE56D90014EF6A /* UIStackView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2597A72AAE56D90014EF6A /* UIStackView + Extension.swift */; };
 		CE4749362AB216E9003DBA66 /* UIFont + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4749352AB216E9003DBA66 /* UIFont + Extension.swift */; };
 		CE9FDD802AAA06E1005ACF86 /* ButtonFormView .swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9FDD7F2AAA06E1005ACF86 /* ButtonFormView .swift */; };
+		CEAD72D02AC215FB006E8D5A /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAD72CF2AC215FB006E8D5A /* TabViewController.swift */; };
+		CEAD72D22AC359DA006E8D5A /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAD72D12AC359DA006E8D5A /* ListViewController.swift */; };
+		CEAD72D62AC46026006E8D5A /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAD72D52AC46026006E8D5A /* PeopleViewController.swift */; };
 		CEF7474B2AA8CB7A00E422E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF7474A2AA8CB7A00E422E1 /* AppDelegate.swift */; };
 		CEF7474D2AA8CB7A00E422E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF7474C2AA8CB7A00E422E1 /* SceneDelegate.swift */; };
 		CEF7474F2AA8CB7A00E422E1 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF7474E2AA8CB7A00E422E1 /* AuthViewController.swift */; };
@@ -27,12 +31,16 @@
 /* Begin PBXFileReference section */
 		CE01274D2AB8640B00A26C97 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CE0127502AB9B73200A26C97 /* SetupProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupProfileViewController.swift; sourceTree = "<group>"; };
+		CE0127522AB9B7F200A26C97 /* AddPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoView.swift; sourceTree = "<group>"; };
 		CE2597A02AADF06C0014EF6A /* UILabel + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extension.swift"; sourceTree = "<group>"; };
 		CE2597A32AAE0BC00014EF6A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		CE2597A52AAE37CB0014EF6A /* UnderlineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlineTextField.swift; sourceTree = "<group>"; };
 		CE2597A72AAE56D90014EF6A /* UIStackView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView + Extension.swift"; sourceTree = "<group>"; };
 		CE4749352AB216E9003DBA66 /* UIFont + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont + Extension.swift"; sourceTree = "<group>"; };
 		CE9FDD7F2AAA06E1005ACF86 /* ButtonFormView .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ButtonFormView .swift"; sourceTree = "<group>"; };
+		CEAD72CF2AC215FB006E8D5A /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		CEAD72D12AC359DA006E8D5A /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		CEAD72D52AC46026006E8D5A /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
 		CEF747472AA8CB7A00E422E1 /* IChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF7474A2AA8CB7A00E422E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEF7474C2AA8CB7A00E422E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,11 +79,32 @@
 			path = SetupProfileView;
 			sourceTree = "<group>";
 		};
+		CE0127542AB9C84C00A26C97 /* UI Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CE4749352AB216E9003DBA66 /* UIFont + Extension.swift */,
+				CEF747602AA8FC6F00E422E1 /* UIButton + Extension.swift */,
+				CEF747632AA9058300E422E1 /* UIColor + Extension.swift */,
+				CE2597A02AADF06C0014EF6A /* UILabel + Extension.swift */,
+				CE2597A72AAE56D90014EF6A /* UIStackView + Extension.swift */,
+			);
+			path = "UI Extension";
+			sourceTree = "<group>";
+		};
+		CE0127562AB9C87D00A26C97 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CE0127522AB9B7F200A26C97 /* AddPhotoView.swift */,
+				CE9FDD7F2AAA06E1005ACF86 /* ButtonFormView .swift */,
+				CE2597A52AAE37CB0014EF6A /* UnderlineTextField.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		CE2597A22AAE0B200014EF6A /* SignUpView */ = {
 			isa = PBXGroup;
 			children = (
 				CE2597A32AAE0BC00014EF6A /* SignUpViewController.swift */,
-				CE2597A52AAE37CB0014EF6A /* UnderlineTextField.swift */,
 			);
 			path = SignUpView;
 			sourceTree = "<group>";
@@ -101,6 +130,9 @@
 			children = (
 				CEF7474A2AA8CB7A00E422E1 /* AppDelegate.swift */,
 				CEF7474C2AA8CB7A00E422E1 /* SceneDelegate.swift */,
+				CEAD72CF2AC215FB006E8D5A /* TabViewController.swift */,
+				CEAD72D52AC46026006E8D5A /* PeopleViewController.swift */,
+				CEAD72D12AC359DA006E8D5A /* ListViewController.swift */,
 				CE01274F2AB9B6E900A26C97 /* SetupProfileView */,
 				CE01274C2AB863E800A26C97 /* LoginView */,
 				CEF7475E2AA8FC0600E422E1 /* AuthenticationView */,
@@ -117,7 +149,6 @@
 			isa = PBXGroup;
 			children = (
 				CEF7474E2AA8CB7A00E422E1 /* AuthViewController.swift */,
-				CE9FDD7F2AAA06E1005ACF86 /* ButtonFormView .swift */,
 			);
 			path = AuthenticationView;
 			sourceTree = "<group>";
@@ -125,11 +156,8 @@
 		CEF7475F2AA8FC2A00E422E1 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				CE4749352AB216E9003DBA66 /* UIFont + Extension.swift */,
-				CEF747602AA8FC6F00E422E1 /* UIButton + Extension.swift */,
-				CEF747632AA9058300E422E1 /* UIColor + Extension.swift */,
-				CE2597A02AADF06C0014EF6A /* UILabel + Extension.swift */,
-				CE2597A72AAE56D90014EF6A /* UIStackView + Extension.swift */,
+				CE0127562AB9C87D00A26C97 /* Extension */,
+				CE0127542AB9C84C00A26C97 /* UI Extension */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -207,15 +235,19 @@
 				CE01274E2AB8640B00A26C97 /* LoginViewController.swift in Sources */,
 				CE4749362AB216E9003DBA66 /* UIFont + Extension.swift in Sources */,
 				CEF7474F2AA8CB7A00E422E1 /* AuthViewController.swift in Sources */,
+				CEAD72D02AC215FB006E8D5A /* TabViewController.swift in Sources */,
 				CE9FDD802AAA06E1005ACF86 /* ButtonFormView .swift in Sources */,
 				CE2597A42AAE0BC00014EF6A /* SignUpViewController.swift in Sources */,
 				CE2597A82AAE56D90014EF6A /* UIStackView + Extension.swift in Sources */,
 				CEF747612AA8FC6F00E422E1 /* UIButton + Extension.swift in Sources */,
 				CE2597A12AADF06C0014EF6A /* UILabel + Extension.swift in Sources */,
 				CE0127512AB9B73200A26C97 /* SetupProfileViewController.swift in Sources */,
+				CEAD72D62AC46026006E8D5A /* PeopleViewController.swift in Sources */,
+				CE0127532AB9B7F200A26C97 /* AddPhotoView.swift in Sources */,
 				CE2597A62AAE37CB0014EF6A /* UnderlineTextField.swift in Sources */,
 				CEF7474B2AA8CB7A00E422E1 /* AppDelegate.swift in Sources */,
 				CEF7474D2AA8CB7A00E422E1 /* SceneDelegate.swift in Sources */,
+				CEAD72D22AC359DA006E8D5A /* ListViewController.swift in Sources */,
 				CEF747642AA9058300E422E1 /* UIColor + Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

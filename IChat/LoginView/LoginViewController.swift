@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 
 class LoginViewController: UIViewController {
@@ -22,6 +23,7 @@ class LoginViewController: UIViewController {
     let emailTextField = UnderlineTextField(font: nil)
     let passwordTextField = UnderlineTextField(font: nil)
     let loginButton = UIButton(title: "Login", titleColor: .blackColor)
+    
     let signInButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Sign Up", for: .normal)
@@ -86,7 +88,6 @@ extension LoginViewController {
 }
 
 // MARK: - SwiftUI
-import SwiftUI
 
 struct LoginVCProvider: PreviewProvider {
     static var previews: some View {
