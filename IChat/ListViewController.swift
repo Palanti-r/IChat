@@ -8,15 +8,25 @@
 import UIKit
 import SwiftUI
 
+
+
 class ListViewController: UIViewController {
   
+    enum Section: Int, CaseIterable {
+        case activeChats
+    }
     
     var collectionView: UICollectionView!
+    var dataSource: UICollectionViewDiffableDataSource<Section, Chat>?
+    
+    let mockChat: [Chat] = Bundle.main.decode([Chat].self, from: "activeChats.json")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionView()
         setupSearchBar()
+        configureDataSource()
+        reloadData()
     }
     
     private func setupCollectionView() {
@@ -26,9 +36,14 @@ class ListViewController: UIViewController {
         view.addSubview(collectionView)
         
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellid")
-        collectionView.dataSource = self
-        collectionView.delegate = self
         
+    }
+    
+    private func reloadData() {
+        var snapshot = NSDiffableDataSourceSnapshot<Section, Chat>()
+        snapshot.appendSections([.activeChats])
+        snapshot.appendItems(mockChat, toSection: .activeChats)
+        dataSource?.apply(snapshot, animatingDifferences: true)
     }
     
     private func createCompositionalLayout() -> UICollectionViewLayout {
@@ -51,11 +66,30 @@ class ListViewController: UIViewController {
         return layout
         
     }
+    private func configureDataSource() {
+    
+        
+        dataSource = UICollectionViewDiffableDataSource<Section, Chat>(collectionView: collectionView) {
+            (collectionView: UICollectionView, indexPath: IndexPath, chat: Chat) -> UICollectionViewCell? in
+            guard let section = Section(rawValue: indexPath.section) else {
+                fatalError("Cant get section")
+            }
+            
+            switch section {
+            case .activeChats:
+                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellid", for: indexPath)
+                cell.backgroundColor = .darkGray
+             return cell
+            }
+            
+        }
+        
+    }
     
 }
-extension ListViewController: UICollectionViewDelegate, UICollectionViewDataSource, UISearchBarDelegate {
+extension ListViewController:  UISearchBarDelegate {
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    /*func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 5
     }
     
@@ -65,6 +99,7 @@ extension ListViewController: UICollectionViewDelegate, UICollectionViewDataSour
         cell.layer.borderWidth = 1
         return cell
     }
+     */
     
     private func setupSearchBar() {
         let searchController = UISearchController(searchResultsController: nil)
