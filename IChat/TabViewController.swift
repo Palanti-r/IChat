@@ -18,8 +18,8 @@ class TabViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tabBar.tintColor = .lightGray
-        tabBar.backgroundColor = .darkGray
+        tabBar.tintColor = .white
+        tabBar.backgroundColor = .lightGray
         
         
         let peopleImage = UIImage(systemName: "person.2", withConfiguration: boldConfiguration) ?? UIImage()
@@ -32,8 +32,9 @@ class TabViewController: UITabBarController {
     }
     private func generateNavigationController(rootViewController: UIViewController, title: String, image: UIImage) -> UIViewController {
         let navigationVC = UINavigationController(rootViewController: rootViewController)
-        navigationVC.tabBarItem.title = title
+  
         navigationVC.tabBarItem.image = image
+        navigationVC.tabBarItem.title = title
         return navigationVC
     }
     
