@@ -17,11 +17,10 @@ final class WaitingChatCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
-        print("frame",  frame)
         self.layer.borderWidth = 1
+        self.layer.borderColor = CGColor(gray: 0.9, alpha: 0.9)
         self.clipsToBounds = true
         self.layer.cornerRadius = frame.height / 2
-        self.backgroundColor = .white
         //print(frame)
     }
     required init?(coder: NSCoder) {

@@ -33,5 +33,8 @@ class SectionHeader: UICollectionReusableView {
             title.topAnchor.constraint(equalTo: self.topAnchor)
         ])
     }
+    private func configure(text: String, font: UIFont?, color: UIColor) {
+        
+    }
 
 }

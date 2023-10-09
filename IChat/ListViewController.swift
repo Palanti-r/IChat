@@ -40,6 +40,7 @@ class ListViewController: UIViewController {
         
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellid")
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellid2")
+        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: SectionHeader.reuseId)
         
     }
     
@@ -82,6 +83,7 @@ class ListViewController: UIViewController {
         let section = NSCollectionLayoutSection(group: group)
         section.interGroupSpacing = 8
         section.contentInsets = NSDirectionalEdgeInsets.init(top: 16, leading: 20, bottom: 0, trailing: 20)
+        
         return section
     }
     
@@ -98,6 +100,12 @@ class ListViewController: UIViewController {
         section.orthogonalScrollingBehavior = .continuous
         section.interGroupSpacing = 8
         section.contentInsets = NSDirectionalEdgeInsets.init(top: 16, leading: 20, bottom: 16, trailing: 20)
+        let sectionHeaderSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .estimated(1))
+        let sectionHeader = NSCollectionLayoutBoundarySupplementaryItem(
+        layoutSize: sectionHeaderSize,
+        elementKind: UICollectionView.elementKindSectionHeader,
+        alignment: .top)
+        section.boundarySupplementaryItems = [sectionHeader]
         return section
     }
     private func configureDataSource() {
